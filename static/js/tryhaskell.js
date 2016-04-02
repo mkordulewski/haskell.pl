@@ -178,7 +178,7 @@ tryhaskell.setPage = function(n,result){
         tryhaskell.makeGuidSamplesClickable();
         // Update the location anchor
         if (tryhaskell.currentPage != null)
-            window.location = '/#step' + n;
+            window.location = '#step' + n;
         tryhaskell.currentPage = n;
         // Setup a hook for the next page
         var nextPage = tryhaskell.pages.list[n];
