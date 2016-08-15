@@ -1,7 +1,11 @@
 // Main entry point
 $(function(){
-  setupVids();
-  setupFeatures();
+  //setupVids();
+  //setupFeatures();
+
+  $('.features .col-md-6').click(function(){
+    $(this).find('.collapse').collapse('toggle');
+  });
 });
 
 // Setup hovering of video thumbnails
