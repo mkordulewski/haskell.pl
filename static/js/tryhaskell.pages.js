@@ -24,20 +24,19 @@ tryhaskell.nemesis = "chirs";
 // All pages
 tryhaskell.pages.list =
     [
-        {title:'Got five minutes?',
+        {title:'Masz wolne 5 minut?',
          guide:
          '<div class="indent">' +
-         '<h3>Got 5 minutes?</h3>' +
-         '<p>Type <code title="Click me to insert &quot;help&quot; into the console." style="cursor: pointer;">help</code> to start the ' +
-         'tutorial.</p>' +
-         '<p>Or try typing these out and see what happens ' +
-         '<small class="note">(click to insert)</small>:</p>' +
+         '<h3>Masz wolne 5 minut?</h3>' +
+         '<p>Wpisz <code title="Kliknij by wkleić &quot;help&quot; do konsoli." style="cursor: pointer;">help</code> by rozpocząć przewodnik po języku</p>' +
+         '<p>Lub wpisz poniższe by sprawdzić co się stanie ' +
+         '<small class="note">(kliknij by wstawić automatycznie)</small>:</p>' +
          '<p>' +
-         '<code title="Click me to insert &quot;23 * 36&quot; into the console." style="cursor: pointer;">23 * 36</code> or <code title="Click me to insert &quot;reverse ' +
-         '&quot;hello&quot;&quot; into the console." style="cursor: pointer;">reverse ' +
-         '"hello"</code> or <code title="Click me to insert &quot;map (+1) [1,2,3]&quot; into the console." style="cursor: pointer;">foldr (:) [] [1,2,3]</code> or <code title="Click me to insert." style="cursor: pointer;">do line <- getLine; putStrLn line</code> or <code>readFile "/welcome"</code>' +
+         '<code title="Kliknij by wkleić &quot;23 * 36&quot; do konsoli." style="cursor: pointer;">23 * 36</code> lub <code title="Kliknij by wkleić &quot;reverse ' +
+         '&quot;hello&quot;&quot; do konsoli." style="cursor: pointer;">reverse ' +
+         '"hello"</code> lub <code title="Kliknij by wkleić &quot;map (+1) [1,2,3]&quot; do konsoli." style="cursor: pointer;">foldr (:) [] [1,2,3]</code> lub <code title="Kliknij by wkleić." style="cursor: pointer;">do line <- getLine; putStrLn line</code> lub <code>readFile "/welcome"</code>' +
          '</p>' +
-         '<p><a href="https://hackage.haskell.org/package/pure-io-0.2.0/docs/PureIO.html#g:2">These</a> IO actions are supported in this sandbox.</p>' +
+         '<p><a href="https://hackage.haskell.org/package/pure-io-0.2.0/docs/PureIO.html#g:2">Pod tym linkiem</a> znajdują się akcje wejścia-wyjścia wspierane w tej piaskownicy.</p>' +
          '</p>' +
          '</div>' +
          '</div>'

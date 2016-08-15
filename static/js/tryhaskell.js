@@ -97,7 +97,7 @@ tryhaskell.makeController = function(){
         },
         animateScroll: true,
         promptHistory: true,
-        welcomeMessage: 'Type Haskell expressions in here.',
+        welcomeMessage: 'Wypróbuj wyrażenia języka Haskell on-line.',
         continuedPromptLabel: '> '
     });
 };
@@ -199,8 +199,8 @@ tryhaskell.setPage = function(n,result){
 tryhaskell.makeGuidSamplesClickable = function() {
     $('#guide code').each(function(){
         $(this).css('cursor','pointer');
-        $(this).attr('title','Click me to insert "' +
-                     $(this).text() + '" into the console.');
+        $(this).attr('title','Kliknij by wkleić "' +
+                     $(this).text() + '" do konsoli.');
         $(this).click(function(){
             tryhaskell.controller.promptText($(this).text());
             tryhaskell.controller.inner.click();
