@@ -1,35 +1,16 @@
 CACHE MANIFEST
-# 2016-04-02:v1
+# 2016-08-15:v1
 
 CACHE:
 /index.html
-/static/css/bootstrap.css
-/static/css/css.css
-/static/css/css_002.css
-/static/css/haskell.css
-/static/css/hl.css
-/static/css/hscolour.css
-/static/fonts/Haskell.eot
-/static/fonts/Haskell.svg
-/static/fonts/Haskell.ttf
-/static/fonts/Haskell.woff
-/static/fonts/glyphicons-halflings-regular.eot
-/static/fonts/glyphicons-halflings-regular.svg
-/static/fonts/glyphicons-halflings-regular.ttf
-/static/fonts/glyphicons-halflings-regular.woff
-/static/images/452269027_150x84.jpg
-/static/images/456929840_150x84.jpg
-/static/images/456929997_150x84.jpg
-/static/images/469227196_150x84.jpg
-/static/images/469235326_150x84.jpg
-/static/images/476988542_150x84.jpg
-/static/images/community.jpg
-/static/images/favicon.ico
-/static/images/logo.png
-/static/js/bootstrap.js
+/static/css/hl.min.css
+/static/img/favicon.ico
+/static/img/haskell-logo.svg
+/static/img/pattern.png
+/static/img/rackspace.svg
+/static/js/bootstrap.min.js
 /static/js/home.js
+/static/js/jquery.console.js
 /static/js/jquery.js
-/static/js/jquery_002.js
 /static/js/tryhaskell.js
-/static/js/tryhaskell_002.js
-/static/rackspace.svg
+/static/js/tryhaskell.pages.js
