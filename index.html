@@ -149,26 +149,24 @@
                     <p class="text-center"><a data-toggle="collapse" href="#collapse-functional"
                                               class="btn btn-xs btn-primary">Rozwiń</a></p>
 
-                    <div id="collapse-functional" class="collapse"><p>The following function takes an integer and
-                        returns an integer. By the type it cannot do any side-effects whatsoever, it cannot mutate any
-                        of its arguments.</p><pre><span class='hs-definition'>square</span> <span
+                    <div id="collapse-functional" class="collapse"><p>Poniższa funkcja przyjmuje i zwraca typ całkowity (<code>Int</code>).
+                        Nie może wywołać efektu ubocznego, nie może zmienić żadnego ze swoich argumentów.</p><pre><span class='hs-definition'>square</span> <span
                             class='hs-keyglyph'>::</span> <span class='hs-conid'>Int</span> <span class='hs-keyglyph'>-&gt;</span> <span
                             class='hs-conid'>Int</span>
 <span class='hs-definition'>square</span> <span class='hs-varid'>x</span> <span class='hs-keyglyph'>=</span> <span
                                 class='hs-varid'>x</span> <span class='hs-varop'>*</span> <span
                                 class='hs-varid'>x</span></pre>
-                        <p>The following string concatenation is okay:</p>
+                        <p>Poniższa konkatenacja literałów typu znakowego jest poprawna:</p>
                         <pre><span class='hs-str'>"Hello: "</span> <span class='hs-varop'>++</span> <span
                                 class='hs-str'>"World!"</span> </pre>
-                        <p>The following string concatenation is a type error:</p>
+                        <p>Poniższa konkatenacja jest błędna:</p>
 
                         <div class="rejected-code"><span class="rejected-note">Type error</span>
                             <pre><span class='hs-str'>"Name: "</span> <span class='hs-varop'>++</span> <span
                                     class='hs-varid'>getLine</span></pre>
                         </div>
-                        <p>Because <code>getLine</code> has type <code>IO String</code> and not <code>String</code>,
-                            like <code>&quot;Name: &quot;</code> is. So by the type system you cannot mix and match
-                            purity with impurity.</p></div>
+                        <p class="text-justify">Ponieważ <code>getLine</code> jest typu <code>IO String</code> a nie typu <code>String</code>,
+                            tak jak literał <code>&quot;Name: &quot;</code>. Więc system typów wymusza rezygnację z mieszania typów oraz zachowanie czystości kodu pod tym względem.</p></div>
                 </div>
             </div>
             <div class=" row ">
