@@ -106,7 +106,7 @@
                     <p class="text-center"><a data-toggle="collapse" href="#collapse-statically-typed"
                                               class="btn btn-xs btn-primary">Rozwiń</a></p>
 
-                    <div id="collapse-statically-typed" class="collapse"><p>All Haskell values have a type:</p><pre><span
+                    <div id="collapse-statically-typed" class="collapse"><p>Wszystkie wartości w jęyku Haskell posiadają typ:</p><pre><span
                             class='hs-definition'>char</span> <span class='hs-keyglyph'>=</span> <span class='hs-chr'>'a'</span>    <span
                             class='hs-keyglyph'>::</span> <span class='hs-conid'>Char</span>
 <span class='hs-definition'>int</span> <span class='hs-keyglyph'>=</span> <span class='hs-num'>123</span>     <span
@@ -115,13 +115,12 @@
                                 class='hs-keyglyph'>::</span> <span class='hs-conid'>Char</span> <span
                                 class='hs-keyglyph'>-&gt;</span> <span class='hs-conid'>Bool</span>
 </pre>
-                        <p>You have to pass the right type of values to functions, or the compiler will reject the
-                            program:</p>
+                        <p>Musisz przekazać do funkcji wartości właściwego typu albo kompilator zgłosi błąd:</p>
 
                         <div class="rejected-code"><span class="rejected-note">Type error</span>
                             <pre><span class='hs-definition'>isDigit</span> <span class='hs-num'>1</span></pre>
                         </div>
-                        <p>You can decode bytes into text:</p><pre><span class='hs-definition'>bytes</span> <span
+                        <p>Możesz dekodować bajty do postaci tekstu:</p><pre><span class='hs-definition'>bytes</span> <span
                                 class='hs-keyglyph'>=</span> <span class='hs-conid'>Crypto</span><span class='hs-varop'>.</span><span
                                 class='hs-conid'>Hash</span><span class='hs-varop'>.</span><span
                                 class='hs-conid'>SHA1</span><span class='hs-varop'>.</span><span
@@ -131,7 +130,7 @@
                                     class='hs-varid'>decodeUtf8</span> <span class='hs-varid'>bytes</span>               <span
                                     class='hs-keyglyph'>::</span> <span class='hs-conid'>Text</span>
 </pre>
-                        <p>But you cannot decode Text, which is already a vector of Unicode points:</p>
+                        <p>Jednak nie możesz dekodować testu, który jest wektorem wskaźników Unicode:</p>
 
                         <div class="rejected-code"><span class="rejected-note">Type error</span>
                             <pre><span class='hs-definition'>doubleDecode</span> <span
