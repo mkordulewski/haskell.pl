@@ -56,14 +56,14 @@ tryhaskell.pages.list =
         {guide:function(result){
             if (!result) result = {expr:'5+7',value:12};
             var complied = result.expr.replace(/ /g,'')=="5+7";
-            var who = complied? 'we' : 'you';
-            return '<h3>' + tryhaskell.pages.rmsg(['Your first Haskell expression',
-                                                   "First Time's a Charm"]) + '</h3>'
-                + '<p>Well done, you typed it perfect! You got back the number'+
-                ' <code>' + result.value + '</code>. Just what '+who+' wanted. '
-                + "</p><p>Let's try something completely different."+
-                " Type in your name like this:" +
-                ' <code>"chris"</code></p>'
+            var who = complied? 'oczekiwaliśmy' : 'oczekiwałeś';
+            return '<h3>' + tryhaskell.pages.rmsg(['Pierwsze wyrażenie w Haskellu',
+                                                   "Pierwszy raz"]) + '</h3>'
+                + '<p>Świetnie, wpisałeś to perfekcyjnie! Uzyskałeś wynik'+
+                ' <code>' + result.value + '</code>. Dokładnie to czego '+who+'. '
+                + "</p><p>Spróbujmy czegoś całkowicie innego."+
+                " Wpisz swoje imię, np:" +
+                ' <code>"Adam"</code></p>'
         },
          trigger:function(result){
              return result.type.match(/^\(?Num [a-z]+\)? => [a-z]+$/) ||
