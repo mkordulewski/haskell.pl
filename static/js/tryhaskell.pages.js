@@ -81,7 +81,7 @@ tryhaskell.pages.list =
                 + '<p>Witaj' + tryhaskell.pages.htmlEncode(n)
                 + (n!="!"? " To ładne imię. Szczerze." : "")
                 + "<p>Przy każdej próbie otrzymujesz jako zwrot wartość wyrażenia. Jak dotąd były to liczby i łańcuchy znakowe.</p>"
-                + "<p>Możesz także użyć listy wartości. Sprawdźmy listę liczb, np: <code>[42,13,22]</code></p>"
+                + "<p>Możesz także użyć listy wartości. Sprawdźmy listę liczb. Załóżmy, że to szczęśliwe liczby w grze losowej: <code>[42,13,22]</code></p>"
         },
          trigger:function(result){
              return result.type == "[Char]"
@@ -91,16 +91,14 @@ tryhaskell.pages.list =
         // Overview of lesson 1
         {guide:function(result){
             if (!result) result = {value:"[42,13,22]"};
-            return '<h3>' + tryhaskell.pages.rmsg(["Lesson 1 done already!"]) +
+            return '<h3>' + tryhaskell.pages.rmsg(["Lekcja pierwsza zbliża się ku końcowi!"]) +
                 '</h3>' +
-                "<p>Great, you made a list of numbers! If you win we'll split" +
-                " the winnings, right?</p>" +
-                "<p>Let's see what you've learned so far:</p>" +
+                "<p>Świetnie, przetestowałeś listę liczb! Jeśli te liczby będą dla Ciebie szczęśliwe i coś wygrasz podzielimy się wygraną, w porządku?</p>" +
+                "<p>Sprawdźmy czego się już nauczyłeś:</p>" +
                 "<ol>"+
-                "<li>How to write maths and lists of things.</li>"+
+                "<li>Jak zapisywać wyrażenia matematyczne i listy wartości.</li>"+
                 "</ol>" +
-                "<p>You can do stuff with lists. Maybe you want the lottery "+
-                "numbers sorted in the right order, try this: " +
+                "<p>Listy możesz także przekształcać. Jeśli chcesz by lista Twoich szczęśliwych numerków była posortowana, zrób to w ten sposób: " +
                 "<code>sort " + result.value + "</code></p>"
         },
          trigger:function(result){
