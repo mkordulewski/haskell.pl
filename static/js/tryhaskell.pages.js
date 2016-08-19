@@ -46,12 +46,12 @@ tryhaskell.pages.list =
 
         // Simple addition
         {lesson:1,
-         title:'Basics; numbers, strings, etc.',
+         title:'Podstawy: liczby, teksty, itp.',
          guide:
-         '<h3>' + tryhaskell.pages.rmsg(['Learning By Numbers','Music is Math','Back to Basics'])
+         '<h3>' + tryhaskell.pages.rmsg(['Nauka za pomocą liczb','Matematyka jest muzyką dla umysłu','Powrót do podstaw'])
          + '</h3>'
-         + "<p>To kick off let's try some maths out. Up there you can"
-         + " type in Haskell expressions. Try this out: <code>5 + 7</code></p>"
+         + "<p>Zacznijmy od odrobiny matematyki. Możesz jej używać w wyrażeniach Haskella."
+         + "Wpisz: <code>5 + 7</code></p>"
         },
         {guide:function(result){
             if (!result) result = {expr:'5+7',value:12};
