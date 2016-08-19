@@ -73,20 +73,15 @@ tryhaskell.pages.list =
         },
         // Strings & types
         {guide:function(result){
-            if (!result) result = {expr:'"chris"',value:"\"chris\""};
+            if (!result) result = {expr:'"Adam"',value:"\"Adam\""};
             var n = tryhaskell.pages.unString(result.value); if (n) n = ", " +n;
             n += "!";
-            return '<h3>' + tryhaskell.pages.rmsg(['Types of values',"What's in a name?"]) +
+            return '<h3>' + tryhaskell.pages.rmsg(['Typy wartości',"Jak masz na imię?"]) +
                 '</h3>'
-                + '<p>Hi there' + tryhaskell.pages.htmlEncode(n)
-                + (n!="!"? " That's a pretty name. Honest." : "")
-                + " You're getting the hang of this! </p>" +
-                // "<p><strong>Note:</strong> You can chat to Haskell programmers while learning here, enter <code>chat</code> to start it."+
-                // " You will join the official IRC channel of the Haskell community!</p>"
-                "<p>Each time, you're getting back the value of the expression. So "+
-                "far, just a number and a list of characters.</p>" +
-                "<p>You can have lists of other stuff, too. Let's see your " +
-                " lottery numbers: <code>[42,13,22]</code></p>"
+                + '<p>Witaj' + tryhaskell.pages.htmlEncode(n)
+                + (n!="!"? " To ładne imię. Szczerze." : "")
+                + "<p>Przy każdej próbie otrzymujesz jako zwrot wartość wyrażenia. Jak dotąd były to liczby i łańcuchy znakowe.</p>"
+                + "<p>Możesz także użyć listy wartości. Sprawdźmy listę liczb, np: <code>[42,13,22]</code></p>"
         },
          trigger:function(result){
              return result.type == "[Char]"
