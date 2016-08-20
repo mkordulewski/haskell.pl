@@ -80,8 +80,8 @@ tryhaskell.pages.list =
                 '</h3>'
                 + '<p>Witaj' + tryhaskell.pages.htmlEncode(n)
                 + (n!="!"? " To ładne imię. Szczerze." : "")
-                + "<p>Przy każdej próbie otrzymujesz jako zwrot wartość wyrażenia. Jak dotąd były to liczby i łańcuchy znakowe.</p>"
-                + "<p>Możesz także użyć listy wartości. Sprawdźmy listę liczb. Załóżmy, że to szczęśliwe liczby w grze losowej: <code>[42,13,22]</code></p>"
+                + "<p class=\"text-justify\">Przy każdej próbie otrzymujesz jako zwrot wartość wyrażenia. Jak dotąd były to liczby i łańcuchy znakowe.</p>"
+                + "<p class=\"text-justify\">Możesz także użyć listy wartości. Sprawdźmy listę liczb. Załóżmy, że to szczęśliwe liczby w grze losowej: <code>[42,13,22]</code></p>"
         },
          trigger:function(result){
              return result.type == "[Char]"
@@ -93,12 +93,12 @@ tryhaskell.pages.list =
             if (!result) result = {value:"[42,13,22]"};
             return '<h3>' + tryhaskell.pages.rmsg(["Lekcja pierwsza zbliża się ku końcowi!"]) +
                 '</h3>' +
-                "<p>Świetnie, przetestowałeś listę liczb! Jeśli te liczby będą dla Ciebie szczęśliwe i coś wygrasz podzielimy się wygraną, w porządku?</p>" +
+                "<p class=\"text-justify\">Świetnie, przetestowałeś listę liczb! Jeśli te liczby będą dla Ciebie szczęśliwe i coś wygrasz podzielimy się wygraną, w porządku?</p>" +
                 "<p>Sprawdźmy czego się już nauczyłeś:</p>" +
                 "<ol>"+
                 "<li>Jak zapisywać wyrażenia matematyczne i listy wartości.</li>"+
                 "</ol>" +
-                "<p>Listy możesz także przekształcać. Jeśli chcesz by lista Twoich szczęśliwych numerków była posortowana, zrób to w ten sposób: " +
+                "<p class=\"text-justify\">Listy możesz także przekształcać. Jeśli chcesz by lista Twoich szczęśliwych numerków była posortowana, zrób to w ten sposób: " +
                 "<code>sort " + result.value + "</code></p>"
         },
          trigger:function(result){
@@ -115,11 +115,11 @@ tryhaskell.pages.list =
              if (!result) result = {value:"[13,23,30]"};
              return '<h3>' + tryhaskell.pages.rmsg(["Zabawa z funkcjami"]) +
                  '</h3>' +
-                 "<p>Gratulujemy, właśnie użyłeś <strong>funkcji</strong>."+
+                 "<p class=\"text-justify\">Gratulujemy, właśnie użyłeś <strong>funkcji</strong>."+
                  " Za ich pomocą programuje się w języku Haskell." +
                  "<p>Jak można się domyślić, otrzymaliśmy <code>" +
                  tryhaskell.pages.htmlEncode(result.value)
-                 + "</code>.</p><p>Czy kiedykolwiek chciałeś mieć bliźniaka z piekła rodem? Ja też. "+
+                 + "</code>.</p><p class=\"text-justify\">Czy kiedykolwiek chciałeś mieć bliźniaka z piekła rodem? Ja też. "+
                  "Na szczęście możemy posortować listę znaków lub łańcuch znakowy"+
                  "<strong>łańcuch znakowy</strong>" +
                  " w taki sam sposób jak liczby! <code>sort \"Adam\"</code></p>"
@@ -136,8 +136,8 @@ tryhaskell.pages.list =
             return '<h3>' +
                 tryhaskell.pages.rmsg(["Krotki, bo czasami pojedyncza wartość nie wystarcza!"]) +
                 '</h3>' +
-                "<p>Uważaj na bliźniaka z piekła rodem, samo jego imię "+tryhaskell.nemesis+" jest już zaskakujące! W razie problemów dzwoń po pomoc.</p>" +
-                "<p>Mój bliźniak ma 28 lat, a oto jego opis za pomocą krotki w języku Haskell: "+
+                "<p class=\"text-justify\">Uważaj na bliźniaka z piekła rodem, samo jego imię "+tryhaskell.nemesis+" jest już zaskakujące! W razie problemów dzwoń po pomoc.</p>" +
+                "<p class=\"text-justify\">Mój bliźniak ma 28 lat, a oto jego opis za pomocą krotki w języku Haskell: "+
                 "<code>(28,\"Aadm\")</code></p>"
         },
          trigger:function(result){
