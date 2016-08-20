@@ -131,14 +131,14 @@ tryhaskell.pages.list =
         },
         // Tuples
         {guide:function(result){
-            if (!result) result = {value:"\"chirs\""};
+            if (!result) result = {value:"\"Aadm\""};
             tryhaskell.nemesis = tryhaskell.pages.htmlEncode(tryhaskell.pages.unString(result.value));
             return '<h3>' +
-                tryhaskell.pages.rmsg(["Tuples, because sometimes one value ain't enough!"]) +
+                tryhaskell.pages.rmsg(["Krotki, bo czasami pojedyncza wartość nie wystarcza!"]) +
                 '</h3>' +
-                "<p>Watch out for "+tryhaskell.nemesis+"! You should keep their credentials for the police.</p>" +
-                "<p>My nemesis is 28 years of age: "+
-                "<code>(28,\"chirs\")</code></p>"
+                "<p>Uważaj na bliźniaka z piekła rodem, samo jego imię "+tryhaskell.nemesis+" jest już zaskakujące! W razie problemów dzwoń po pomoc.</p>" +
+                "<p>Mój bliźniak ma 28 lat, a oto jego opis za pomocą krotki w języku Haskell: "+
+                "<code>(28,\"Aadm\")</code></p>"
         },
          trigger:function(result){
              return result.expr.match(/sort/) &&
