@@ -113,16 +113,16 @@ tryhaskell.pages.list =
          title: 'Simple Functions',
          guide:function(result){
              if (!result) result = {value:"[13,23,30]"};
-             return '<h3>' + tryhaskell.pages.rmsg(["We put the funk in function"]) +
+             return '<h3>' + tryhaskell.pages.rmsg(["Zabawa z funkcjami"]) +
                  '</h3>' +
-                 "<p>Congratulations, you just used a <strong>function</strong>."+
-                 " They're how you get things done in Haskell." +
-                 "<p>As you might've guessed, we got back <code>" +
+                 "<p>Gratulujemy, właśnie użyłeś <strong>funkcji</strong>."+
+                 " Za ich pomocą programuje się w języku Haskell." +
+                 "<p>Jak można się domyślić, otrzymaliśmy <code>" +
                  tryhaskell.pages.htmlEncode(result.value)
-                 + "</code>.</p><p>Ever wanted an evil twin nemesis? Me too. "+
-                 "Luckily, you can sort lists of characters, or "+
-                 "<strong>strings</strong>" +
-                 ", in the same way as numbers! <code>sort \"chris\"</code></p>"
+                 + "</code>.</p><p>Czy kiedykolwiek chciałeś mieć bliźniaka z piekła rodem? Ja też. "+
+                 "Na szczęście możemy posortować listę znaków lub łańcuch znakowy"+
+                 "<strong>łańcuch znakowy</strong>" +
+                 " w taki sam sposób jak liczby! <code>sort \"Adam\"</code></p>"
          },
          trigger:function(result){
              return result.expr.match(/sort/) &&
