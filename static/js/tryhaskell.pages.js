@@ -218,13 +218,12 @@ tryhaskell.pages.list =
         }
         },
         {guide:function(result){
-            return "<h3>Basics over, let's go!</h3>" +
-                "<p>Next, let's take a short detour to learn about " +
-                "<strong>syntactic sugar</strong>. " +
-                "Try typing this out:</p>" +
+            return "<h3>Więcej niż podstawy, lećmy dalej!</h3>" +
+                "<p>Teraz przyjrzyjmy się " +
+                "<strong>lukrowi składniowemu</strong> (<em>syntactic sugar</em>). " +
+                "Wpisz:</p>" +
                 "<p><code>'a' : []</code></p>" +
-                "<p>Or skip to <code>lesson4</code> to learn about functions," +
-                " the meat of Haskell!";
+                "<p>Lub po prostu pomiń to i skocz do lekcji czwartej (<code>lesson4</code>) by pouczyć się o funkcjach, kwontesencji Haskella!";
         },trigger:function(result){
             return result.expr.match(/^[ ]*let[ ]+villain[ ]*=[ ]*\([0-9]+,[ ]*"[^"]+"\)[ ]*in[ ]+fst[ ]+villain[ ]*/) &&
                 result.type.match(/\(?Num [a-z]\)? => [a-z]$/);
