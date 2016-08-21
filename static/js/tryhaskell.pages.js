@@ -147,20 +147,19 @@ tryhaskell.pages.list =
         },
         // Functions on tuples
         {guide:function(result){
-            if (!result) result = {value:"(28,\"chirs\")"};
+            if (!result) result = {value:"(28,\"Aadm\")"};
             var age = result.value.match(/^\(([0-9]+)+/);
             var villain = tryhaskell.pages.htmlEncode(result.value.replace(/\\"/g,'"'));
             return '<h3>' +
-                tryhaskell.pages.rmsg(["We'll keep them safe, don't worry about it."]) +
+                tryhaskell.pages.rmsg(["Dane trzymamy razem"]) +
                 '</h3>' +
-                "<p>Is "+(age?age[1]:"that")+" a normal age for a " +
-                "super-villain?</p>" +
-                "<p>You just wrote a <em>tuple</em>. It's a way to keep a bunch of values together in Haskell. " +
-                "You can put as many as you like in there:</p>" +
-                "<ul><li><code>(1,\"hats\",23/35)</code></li><li><code>(\"Shaggy\",\"Daphnie\",\"Velma\")</code></li></ul>" +
-                "<p>Actually, let's say our villain <em>is</em> " +
+                "<p>Czy "+(age?age[1]+" lat":"to")+" jest normalnym wiekiem dla takiej osoby z piekła rodem?</p>" +
+                "<p class=\"text-justify\">Właśnie napisałeś <em>krotkę</em>. W Haskellu łatwe jest umieszczanie danych różnych typów razem, gdy są powiazane znaczeniowo. " +
+                "W krotce możesz umieszczać ile chcesz danych i dowolnego typu:</p>" +
+                "<ul><li><code>(1,\"ananas\",23/35)</code></li><li><code>(\"Agnieszka\",\"Beata\",\"Cecylia\")</code></li></ul>" +
+                "<p>Załóżmy, że nasz gagatek jest opisany jako " +
                 "<code>" + villain + "</code>" +
-                ", how do you get their age?</p>" +
+                ", to jak pobrać jego wiek?</p>" +
                 "<code>fst " + villain + "</code>"
         },
          trigger:function(result){
