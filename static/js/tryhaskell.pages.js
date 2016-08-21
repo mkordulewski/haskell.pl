@@ -169,25 +169,22 @@ tryhaskell.pages.list =
         // Summary of lesson 2
         {guide:function(result){
             return '<h3>' +
-                tryhaskell.pages.rmsg(["Lesson 2 done! Wow, great job!",
-                                       "Lesson 2 completo!"]) +
+                tryhaskell.pages.rmsg(["Lekcja druga zakończona! Gratulacje!"]) +
                 '</h3>' +
 
-            "<p>Good job! You got the age back from the tuple! Didn't " +
-                " even break a sweat, did you? The <code>fst</code> function "+
-                "just gets the <em>first</em> value. It's called \"fst\" because " +
-                "it's used <em>a lot</em> in Haskell so it really needs to be short!</p>" +
+            "<p class=\"text-justify\">Świetna robota! Pobrałeś wiek z <code>krotki</code>! Nawet się nie spociłeś, prawda? Funkcja <code>fst</code> "+
+                "po prostu pobiera <em>pierwszą</em> wartość. Została nazwana <em>\"fst\"</em> od angielskiego <em>\"first\"</em> ponieważ " +
+                " jest używana <em>często</em>, więc jej nazwa powinna być krótka!</p>" +
 
-            "<p>Time to take a rest and see what you learned:</p>" +
+            "<p>Sprawdźmy czego się nauczyłeś:</p>" +
                 "<ol>"+
-                "<li>Functions can be used on lists of any type.</li>" +
-                "<li>We can stuff values into tuples.</li>" +
-                "<li>Getting the values back from tuples is easy.</li>"+
+                "<li>Funkcje mogą być przyjmować listy dowolnych typów jako argumentów.</li>" +
+                "<li>Możemy przechowywać dane w krotkach.</li>" +
+                "<li>Pobieranie wartości z krotki jest bardzo proste.</li>"+
                 "</ol>" +
 
-            "<p>Now let's say you want " +
-                " to use a value more than once, how would you do it? "+
-                "To make our lives easier, we can say:</p>" +
+            "<p class=\"text-justify\">Teraz powiedzmy, że chcesz użyć wartości więcej niż raz. Jak to zrobić? "+
+                "To proste, możemy napisać:</p>" +
 
             "<code>let x = 4 in x * x</code>"
         },
