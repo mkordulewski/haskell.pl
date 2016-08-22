@@ -194,23 +194,23 @@ tryhaskell.pages.list =
          }
         },
         {guide:function(result){
-            return "<h3>Let them eat cake</h3>" +
+            return "<h3>Trochę przyjemności</h3>" +
 
-            "<p>You just <em>bound</em> a <em>variable</em>. " +
-                "That is, you bound <code>x</code> to the expression <code>4</code>, " +
-                " and then you can write <code>x</code> in some code (the <em>body</em>) and " +
-                " it will mean the same as if you'd written <code>4</code>.</p>" +
+            "<p class=\"text-justify\">Właśnie <em>związałeś</em> <em>zmienną</em>. " +
+                "To oznacza, że związałeś zmienną <code>x</code> z wyrażeniem <code>4</code>, " +
+                " więc gdy napiszesz <code>x</code> w jakimś kodzie (<em>ciele</em>) " +
+                " to będzie znaczyło to tyle samo jakbyś napisał <code>4</code>.</p>" +
 
-            "<p>It's like this: <code>let <em>var</em> = <em>expression</em> in <em>body</em></code></p>" +
+            "<p>Wygląda to tak: <code>let <em>zmienna</em> = <em>wyrażenie</em> in <em>ciało</em></code></p>" +
 
-            "The <code>in</code> part just separates the expression from the body.</p>" +
+            "Słowo <code>in</code> oddziela <em>wyrażenie</em> od <em>ciała</em>.</p>" +
 
-            "<p>For example try: " +
+            "<p>Na przykład: " +
                 "<code><span class='highlight'>let</span> x <span class='highlight'>=</span> 8 * 10 <span class='highlight'>in</span> x + x</code></p>" +
 
-            "<p>So if we wanted to get the age of our villain, we could do:</p>" +
+            "<p class=\"text-justify\">Więc jeśli chcesz pobrać wiek swojego alter ego z poprzednich przykładów po prostu wykonaj:</p>" +
 
-            "<code><span class='highlight'>let</span> villain <span class='highlight'>=</span> (28,\"chirs\") <span class='highlight'>in</span> fst villain</code>"
+            "<code><span class='highlight'>let</span> villain <span class='highlight'>=</span> (28,\"Aadm\") <span class='highlight'>in</span> fst villain</code>"
 
         },trigger:function(result){
             return result.expr.match(/^[ ]*let[ ]+x[ ]*=[ ]*[0-9]+[ ]*in[ ]*x[ ]*\*[ ]*x/) &&
