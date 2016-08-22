@@ -256,12 +256,12 @@ tryhaskell.pages.list =
         // Booleans and string syntactic sugar
         {guide:function(result){
             return '<h3>' +
-                tryhaskell.pages.rmsg(["You're on fire!"]) +
+                tryhaskell.pages.rmsg(["Lecimy dalej!"]) +
                 '</h3>' +
-                "<p>You're handling this syntax really well, nice!</p>" +
-                "<p>You just got a boolean value back, and it said " +
-                "<code>True</code>. That means they're equal!</p>" +
-                "<p>One final demonstration on syntactic sugar for now:</p>" +
+                "<p>Łapiesz tę składnię całkiem nieźle!</p>" +
+                "<p>Otrzymałeś wartość logiczną " +
+                "<code>True</code>. Co oznacza, że wartości wyrażeń w porównaniu są równe!</p>" +
+                "<p>Jeszcze jeden przykład lukru sładniowego:</p>" +
                 "<code>['a','b','c'] == \"abc\"</code>"
         },
          trigger:function(result){
