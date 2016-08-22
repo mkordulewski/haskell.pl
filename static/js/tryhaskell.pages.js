@@ -234,21 +234,18 @@ tryhaskell.pages.list =
          title:'Syntactic Sugar',
          guide:function(result){
              return '<h3>' +
-                 tryhaskell.pages.rmsg(["You constructed a list!"]) +
+                 tryhaskell.pages.rmsg(["Stworzyłeś listę!"]) +
                  '</h3>' +
-                 "<p>Well done, that was tricky syntax. You used the <code>(:)</code> " +
-                 "function. It takes two values, some value and a list, and " +
-                 " constructs a new list" +
-                 " out of them. We call it 'cons' for short.</p>" +
-                 "<p><code>'a'</code> is " +
-                 "the character 'a', <code>[]</code> is an empty list. So " +
-                 "tacking <code>'a'</code> at the start of an empty list just "+
-                 "makes a list <code>['a']</code>!</p>" +
-                 "<p>But thankfully we don't have to type out " +
-                 "<code>'a' : 'b' : []</code> every time we want to make a "+
-                 "list of characters; we can use " +
-                 "<strong>syntactic sugar</strong> and just write"+
-                 " <code>['a','b']</code>. Don't believe me, check this!</p>" +
+                 "<p>Bardzo dobrze, to była zmyślna składnia. Użyłeś funkcji <code>(:)</code>." +
+                 "Przyjmuje ona dwa argumenty, dowolną wartość i listę, a następnie konstruuje z nich nową listę. " +
+                 "W skrócie nazywamy ją <em>'cons'</em>.</p>" +
+                 "<p><code>'a'</code> jest po prostu znakiem 'a', <code>[]</code> jest pustą listą. Tak więc " +
+                 "dokleja <code>'a'</code> z przodu do pustej listy "+
+                 "i tworzy listę <code>['a']</code>!</p>" +
+                 "<p>Jednak na szczęście nie musimy pisać " +
+                 "<code>'a' : 'b' : []</code> za każdym razem gdy potrzebujemy list znaków; możemy do tego użyć " +
+                 "<strong>lukru składniowego</strong> i po prostu napisać"+
+                 " <code>['a','b']</code>. Nie wierz na słowo, lepiej sprawdź samemu!</p>" +
                  "<code>'a' : 'b' : [] == ['a','b']</code>"
          },
          trigger:function(result){
