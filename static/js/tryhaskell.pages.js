@@ -236,13 +236,13 @@ tryhaskell.pages.list =
              return '<h3>' +
                  tryhaskell.pages.rmsg(["Stworzyłeś listę!"]) +
                  '</h3>' +
-                 "<p>Bardzo dobrze, to była zmyślna składnia. Użyłeś funkcji <code>(:)</code>." +
+                 "<p class=\"text-justify\">Bardzo dobrze, to była zmyślna składnia. Użyłeś funkcji <code>(:)</code>." +
                  "Przyjmuje ona dwa argumenty, dowolną wartość i listę, a następnie konstruuje z nich nową listę. " +
                  "W skrócie nazywamy ją <em>'cons'</em>.</p>" +
-                 "<p><code>'a'</code> jest po prostu znakiem 'a', <code>[]</code> jest pustą listą. Tak więc " +
+                 "<p class=\"text-justify\"><code>'a'</code> jest po prostu znakiem 'a', <code>[]</code> jest pustą listą. Tak więc " +
                  "dokleja <code>'a'</code> z przodu do pustej listy "+
                  "i tworzy listę <code>['a']</code>!</p>" +
-                 "<p>Jednak na szczęście nie musimy pisać " +
+                 "<p class=\"text-justify\">Jednak na szczęście nie musimy pisać " +
                  "<code>'a' : 'b' : []</code> za każdym razem gdy potrzebujemy list znaków; możemy do tego użyć " +
                  "<strong>lukru składniowego</strong> i po prostu napisać"+
                  " <code>['a','b']</code>. Nie wierz na słowo, lepiej sprawdź samemu!</p>" +
