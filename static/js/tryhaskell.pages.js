@@ -223,7 +223,7 @@ tryhaskell.pages.list =
                 "<strong>lukrowi składniowemu</strong> (<em>syntactic sugar</em>). " +
                 "Wpisz:</p>" +
                 "<p><code>'a' : []</code></p>" +
-                "<p>Lub po prostu pomiń to i skocz do lekcji czwartej (<code>lesson4</code>) by pouczyć się o funkcjach, kwontesencji Haskella!";
+                "<p>Lub po prostu pomiń to i skocz do lekcji czwartej (<code>lesson4</code>) by pouczyć się o funkcjach, kwintesencji Haskella!";
         },trigger:function(result){
             return result.expr.match(/^[ ]*let[ ]+villain[ ]*=[ ]*\([0-9]+,[ ]*"[^"]+"\)[ ]*in[ ]+fst[ ]+villain[ ]*/) &&
                 result.type.match(/\(?Num [a-z]\)? => [a-z]$/);
