@@ -274,20 +274,16 @@ tryhaskell.pages.list =
             return '<h3>' +
                 tryhaskell.pages.rmsg(["Lekcja 4: Lukier składniowy jest słodki"]) +
                 '</h3>' +
-                "<p>Let's have a gander at what you learned:</p>" +
+                "<p>Podsumujmy czego się nauczyłeś:</p>" +
                 "<ol>" +
-                "<li>In <code>'a' : []</code>, <code>:</code> is really just " +
-                " another function, just clever looking.</li>" +
-                "<li>Pretty functions like this are written like <code>(:)</code> when " +
-                " you talk about them.</li>" +
-                "<li>A list of characters <code>['a','b']</code> can just be written " +
-                "<code>\"ab\"</code>. Much easier!</li>"
+                "<li>w wyrażeniu <code>'a' : []</code> znak <code>:</code> jest w rzeczywistości" +
+                " funkcją tylko zapisaną w sposób skrócony.</li>" +
+                "<li>lista znaków <code>['a','b']</code> może być zapisana jako " +
+                "<code>\"ab\"</code>. Czyli o wiele prościej!</li>"
                 + "</ol>" +
-                "<p>Phew! You're getting pretty deep! Your arch nemesis, " +
-                tryhaskell.nemesis + ", is gonna try to steal your " + tryhaskell.pages.rmsg(['mojo',
-                                                                                   'pizza']) +
-                "! Let's learn a bit more about functions and passing " +
-                "them around. Try this:</p> <code>map (+1) [1..5]</code></p>";
+                "<p>Nieźle, doszedłeś już całkiem daleko! " +
+                "Przeróbmy jeszcze nieco więcej na temat funkcji i przekazywania ich. " +
+                "Wypróbuj ten kod:</p> <code>map (+1) [1..5]</code></p>";
         },
          trigger:function(result){
              return result.expr.replace(/[^\]\[',=\"]?/g,'') == "['','','']==\"\"" &&
