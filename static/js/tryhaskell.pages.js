@@ -91,7 +91,7 @@ tryhaskell.pages.list =
         // Overview of lesson 1
         {guide:function(result){
             if (!result) result = {value:"[42,13,22]"};
-            return '<h3>' + tryhaskell.pages.rmsg(["Lekcja pierwsza zbliża się ku końcowi!"]) +
+            return '<h3>' + tryhaskell.pages.rmsg(["Lekcja 2: kolejne wyzwania"]) +
                 '</h3>' +
                 "<p class=\"text-justify\">Świetnie, przetestowałeś listę liczb! Jeśli te liczby będą dla Ciebie szczęśliwe i coś wygrasz podzielimy się wygraną, w porządku?</p>" +
                 "<p>Sprawdźmy czego się już nauczyłeś:</p>" +
@@ -272,7 +272,7 @@ tryhaskell.pages.list =
         // Summary of syntactic sugar section
         {guide:function(result){
             return '<h3>' +
-                tryhaskell.pages.rmsg(["Lesson 3 over! Syntactic sugar is sweet"]) +
+                tryhaskell.pages.rmsg(["Lekcja 4: Lukier składniowy jest słodki"]) +
                 '</h3>' +
                 "<p>Let's have a gander at what you learned:</p>" +
                 "<ol>" +
