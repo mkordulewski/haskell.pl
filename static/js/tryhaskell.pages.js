@@ -294,17 +294,15 @@ tryhaskell.pages.list =
          title:'Functions, reloaded; passing, defining, etc.',
          guide:function(){
              var title =
-                 tryhaskell.pages.rmsg(["Functions [of a Geisha]",
-                                        "Functions, functors, functoids, funky",
-                                        "Functions: Expanded fo' real"]);
+                 tryhaskell.pages.rmsg(["Funkcje, funktory, funktoidy, fajnie"]);
              return "<h3>" + title + "</h3>" +
 
-             "<p>Here's where the magic begins!</p>" +
+             "<p>Tu zaczyna się magia!</p>" +
 
-             "<p>You just passed the <code>(+1)</code> " +
-                 "function to the <code>map</code> function.</p>" +
+             "<p>Przekazałeś funkcję <code>(+1)</code> " +
+                 "do funkcji <code>map</code>.</p>" +
 
-             "<p>You can try other things like <small class='note'>(remember: click to insert them)</small>:</p>" +
+             "<p>Możesz spróbować innych rzeczy, na przykład <small class='note'>(pamiętaj, że możesz kliknięciem wstawić kod do konsoli)</small>:</p>" +
 
              "<ul>" +
                  "<li><code>map (*99) [1..10]</code></li>" +
@@ -312,7 +310,7 @@ tryhaskell.pages.list =
                  "<li><code>filter (>5) [62,3,25,7,1,9]</code></li>" +
                  "</ul>" +
 
-             "<p>Note that a tuple is different to a list because you can do this:</p>" +
+             "<p>Zauważ, że krotka różni się od listy ponieważ możesz zrobić coś takiego:</p>" +
                  "<code>(1,\"George\")</code>"
          },
          trigger:function(result){
