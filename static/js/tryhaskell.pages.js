@@ -319,17 +319,17 @@ tryhaskell.pages.list =
                   result.type.match(/^\(?Enum [a-z], Num [a-z]\)? => \[[a-z]\]$/));
          }},
         {guide:function(result){
-            return "<h3>Lists and Tuples</h3>" +
+            return "<h3>Listy i krotki</h3>" +
 
-            "<p>You can only " +
-                " have a list of numbers or a list of characters, whereas in a tuple you can throw anything in! </p>" +
+            "<p class=\"text-justify\">W liście możesz mieć tylko liczby lub znaki" +
+                " , jednak w krotce możesz umieścić wszystko! </p>" +
 
-            "<p>We've also seen that you can make a new list with <code>(:)</code> that joins two values together, like: </p>" +
+            "<p class=\"text-justify\">Możesz także stworzyć nową listę za pomocą <code>(:)</code> co łączy wartości razem w jedną listę: </p>" +
                 "<p><code>1 : [2,3]</code></p>" +
 
-            "<p>But we can't do this with tuples! You can only write a tuple and then look at what's inside. You can't make new ones on the fly like a list." +
+            "<p class=\"text-justify\">Jednak nie możesz zrobić tego z krotką! Możesz jedynie zapisać krotkę a następnie sprawdzać jej zawartość. Nie możesz tworzyć nowych tak jak by to były listy." +
 
-            "<p>Let's write our own functions! It's really easy. How about something simple:</p>" +
+            "<p class=\"text-justify\">Napiszmy naszą własną funkcję! To proste. Na przykład coś prostego:</p>" +
                 "<code>let square x = x * x in square "+tryhaskell.pages.rmsg([52,10,3])+"</code>"
 
         },
