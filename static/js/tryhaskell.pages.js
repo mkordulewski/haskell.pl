@@ -399,22 +399,22 @@ tryhaskell.pages.list =
                  result.type == "Char";
          }},
         {guide:function(result){
-            return "<h3>Lesson 4 complete!</h3>" +
+            return "<h3>Lekcja 5</h3>" +
 
-            "<p>Brilliant! You're making excellent progress! " +
-                "You just passed <code>toUpper</code> to <code>map</code>. No problem.</p>" +
+            "<p>Wyśmienicie! Robisz wspaniałe postępy!</p>" +
+            "<p>Przekazałeś <code>toUpper</code> do <code>map</code>. I wyszło nieźle.</p>" +
 
-            "<p>Let's go over what you've learned in this lesson:</p>" +
+            "<p>Przyjrzyjmy się czego już się nauczyłeś:</p>" +
 
             "<ol>" +
-                "<li>Functions like <code>map</code> take other functions as parameters.</li>" +
-                "<li>Functions like <code>(+1)</code>, <code>(>5)</code> and "+
-                "<code>square</code> can be passed to other functions.</li>" +
-                "<li>Defining functions is just a case of writing what "+
-                "to do with the parameters.</li>"  + "</ol>" +
+                "<li>Funkcje takie jak <code>map</code> pobierają inne funkcje jako parametry.</li>" +
+                "<li>Funkcje takie jak <code>(+1)</code>, <code>(>5)</code> lub "+
+                "<code>square</code> mogą być przekazane do innych funkcji jako parametry.</li>" +
+                "<li>Definiowanie funkcji jest tylko sposobem zapisu co zrobić z przekazanymi parametrami.</li>"  +
+            "</ol>" +
 
-            "<p>Let's check out <em>pattern matching</em>; a way to "+
-                "get values from other values using patterns. Try this: </p>" +
+            "<p>Sprawdźmy <em>dopasowanie wzorców</em>; sposób na "+
+                "uzyskanie wartości z innych wartości używając wzorców. Wypróbuj: </p>" +
                 "<p><code>let (a,b) = (10,12) in a * 2</code></p>"
         },
          trigger:function(result){
