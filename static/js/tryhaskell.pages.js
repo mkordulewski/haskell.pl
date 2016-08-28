@@ -338,16 +338,16 @@ tryhaskell.pages.list =
                  result.type.match(/^\(?Num [a-z]\)? => \([a-z], \[Char\]\)$/);
          }},
         {guide:function(result){
-            return "<h3>Let there be functions</h3>" +
-                "<p>Nice one! I think you're getting used to the <code>let</code> syntax.</p>" +
-                "<p>You defined a function. You can read it as, as for a given " +
-                "<em>parameter</em> called <code>x</code>, <code>square</code> of " +
-                "<code>x</code> is <code>x * x</code>." +
-                "<p>Some others you can try are:</p>" +
+            return "<h3>Zajmijmy się funkcjami</h3>" +
+                "<p>Bardzo dobrze! Myślę, że powinieneś się zająć składnią <code>let</code>.</p>" +
+                "<p>Zdefiniowałeś właśnie funkcję. Możesz to przeczytać, że dla danego " +
+                "<em>parametru</em> nazwanego <code>x</code>, <code>square</code> od " +
+                "<code>x</code> wynosi <code>x * x</code>." +
+                "<p>Możesz też spróbować tego:</p>" +
                 "<ul><li><code>let add1 x = x + 1 in add1 5</code></li>" +
                 "<li><code>let second x = snd x in second (3,4)</code></li>" +
                 "</ul>" +
-                "<p>Let's go crazy and use our <code>square</code> function with map:</p>" +
+                "<p>Zaszalejmy i użyjmy naszej funkcji <code>square</code> z funkcją <code>map</code>:</p>" +
                 "<code>let square x = x * x in map square [1..10]</code>"
         },
          trigger:function(result){
