@@ -356,14 +356,14 @@ tryhaskell.pages.list =
          }},
         {guide:function(result){
             if (!result || !result.value) result = { value: "[1,4,9,16,25,36,49,64,81,100]" };
-            return "<h3>Let there be functions</h3>" +
+            return "<h3>Zajmijmy się funkcjami</h3>" +
 
-            "<p>That's so cool! You described a simple function <code>square</code> and then " +
-                "you just passed it to another function (<code>map</code>) and got back <code>" +
-                tryhaskell.pages.htmlEncode(result.value) + "</code>, exactly what you expected!</p>" +
+            "<p class=\"text-justify\">Nieźle! Stworzyłeś funkcję <code>square</code> a następnie " +
+                "przekazałeś ją do innej funkcji (<code>map</code>) i otrzymałeś wynik <code>" +
+                tryhaskell.pages.htmlEncode(result.value) + "</code>. Czyli dokładnie to czego się spodziewałeś!</p>" +
 
-            "<p>Haskell is pretty good at composing things together like this. " +
-                "Some other things you can try are:</p>" +
+            "<p class=\"text-justify\">Haskell całkiem nieźle radzi sobie z tworzeniem takich rzeczy. " +
+                "Kilka innych przykładów:</p>" +
 
             "<ul>" +
                 "<li><code>let add1 x = x + 1 in map add1 [1,5,7]</code></li>" +
@@ -371,9 +371,9 @@ tryhaskell.pages.list =
                 "<li><code>let take5s = filter (==5) in map take5s [[1,5],[5],[1,1]]</code></li>" +
                 "</ul>" +
 
-            "<p>Did you get back what you expected?</p>" +
+            "<p>Otrzymałeś to czego się spodziewałeś?</p>" +
 
-            "<p>One more example for text; how do you upcase a letter?</p>" +
+            "<p>Jeszcze jeden przykład: jak zmienić literę z małej na wielką?</p>" +
 
             "<p><code>toUpper 'a'</code></p>"
         },
