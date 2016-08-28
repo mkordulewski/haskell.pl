@@ -383,16 +383,16 @@ tryhaskell.pages.list =
                   result.type.match(/^\(?Enum [a-z], Num [a-z]\)? => \[[a-z]\]$/));
          }},
         {guide:function(result){
-            return "<h3>Exercise time!</h3>" +
+            return "<h3>Czas na ćwiczenia!</h3>" +
 
-            "<p>Easy! Remember: characters are written like <code>'a'</code> and " +
-                "strings (lists of characters) are written like <code>\"a\"</code>." +
+            "<p>Chcę byś użył funkcji <code>toUpper</code> by zmienić na wielkie litery moje imię " +
+                "<code>\"Adam\"</code>. Spróbuj." +
+                " Potrafisz to zrobić, wierzę w Ciebie!</p>" +
 
-            "<p>I need you to use <code>toUpper</code> capitalise my whole name, " +
-                "<code>\"Chris\"</code>. Give it a try." +
-                " You can do it, I believe in you!</p>" +
+            "<p>Pamiętaj: znaki są zapisywane jako <code>'a'</code> a " +
+                "łańcuchy znakowe (listy znaków) jako <code>\"a\"</code>." +
 
-            '<p>Spoiler: <code class="spoiler">map toUpper "Chris"</code></p>'
+            '<p>Podpowiedź: <code class="spoiler">map toUpper "Adam"</code></p>'
         },
          trigger:function(result){
              return result.expr.match(/^toUpper 'a'$/) &&
