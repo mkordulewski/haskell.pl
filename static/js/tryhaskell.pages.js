@@ -469,12 +469,12 @@ tryhaskell.pages.list =
                  result.type == "Char";
          }},
         {guide:function(result){
-            return "<h3>"+tryhaskell.pages.rmsg(["Exercise!","Show me the money!"])+"</h3>" +
+            return "<h3>"+tryhaskell.pages.rmsg(["Ćwiczenie!","Show me the money!"])+"</h3>" +
 
-            "<p>Try to get the <code>'a'</code> value from this value using pattern matching:</p>" +
+            "<p>Spróbuj pobrać wartość <code>'a'</code> z podanej wartości za pomocą dopasowania wzorców:</p>" +
                 "<p><code>(10,\"abc\")</code></p>" +
 
-            "<p>Spoiler: <code class='spoiler'>let (_,(a:_)) = (10,\"abc\") in a</code></p>"
+            "<p>Rozwiązanie: <code class='spoiler'>let (_,(a:_)) = (10,\"abc\") in a</code></p>"
         },
          trigger:function(result){
              return result.expr.match(/^[ ]*let[ ]*\(a:_\)[ ]*=[ ]*"xyz"[ ]*in[ ]*a[ ]*$/) &&
