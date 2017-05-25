@@ -451,16 +451,16 @@ tryhaskell.pages.list =
                  result.type.match(/\(?Num [a-z]\)? => [a-z]$/);
          }},
         {guide:function(result){
-            return "<h3>"+tryhaskell.pages.rmsg(["Ignorance is bliss","Ignoring values"])+"</h3>" +
+            return "<h3>"+tryhaskell.pages.rmsg(["Ignorowanie wartości"])+"</h3>" +
 
-            "<p>You're getting into tricky syntax, huh? I know you can handle it!</p>" +
+            "<p>Wchodzimy w coraz bardziej zadziwiającą składnię, co? Wiem, że dasz radę!</p>" +
 
-            "<p>If you just want some of the values, you can ignore the others with <code>_</code> (underscore) like this:</p>" +
+            "<p>Jeśli potrzebujesz tylko niektórych wartości, możesz zignorować inne za pomocą znaku <code>_</code> (podkreślenia) w następujący sposób:</p>" +
 
             "<p><code>let (a:_:_:_) = \"xyz\" in a</code></p>" +
 
-            "<p>In fact, <code>(a:b:c:d)</code> is short-hand for " +
-                "<code>(a:(b:(c:d)))</code>, so you can just ignore the rest in one go:</p>" +
+            "<p>W rzeczywistości zapis <code>(a:b:c:d)</code> jest skrótem dla zapisu " +
+                "<code>(a:(b:(c:d)))</code>, więc możesz resztę zignorować w jednym ruchu:</p>" +
 
             "<code>let (a:_) = \"xyz\" in a</code>"
         },
