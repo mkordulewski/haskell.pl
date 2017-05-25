@@ -501,20 +501,20 @@ tryhaskell.pages.list =
                  result.type == "Char";
          }},
         {guide:function(result){
-            return "<h3>"+tryhaskell.pages.rmsg(["And that's the end of that chapter"])+"</h3>" +
+            return "<h3>"+tryhaskell.pages.rmsg(["I to już koniec"])+"</h3>" +
 
-            "<p>That was easy, right?</p>" +
+            "<p>To było łatwe, prawda?</p>" +
 
-            "<p>Let's go over what you've learned in this lesson:</p>" +
+            "<p>Podsumujmy czego się nauczyliśmy:</p>" +
 
             "<ol>" +
-                "<li>Values are pattern matched, or <em>deconstructed</em>, by writing however they were constructed.</li>" +
-                "<li>Patterns let you use the values that you match.</li>" +
-                "<li>You can ignore whichever values you want.</li>" +
-                "<li>You can pattern match and keep hold of the original value too.</li>" +
+                "<li>Wartości są dopasowywane do wzorca lub <em>dekonstruowane</em> za pomocą zapisu adekwatnego do konstrukcji wartości.</li>" +
+                "<liWzorce umożliwiają użycie dopasowanych wartości.</li>" +
+                "<li>Możesz zignorować dowolną wartość, którą chcesz.</li>" +
+                "<li>Można również dopasować wzór i zachować oryginalną wartość.</li>" +
                 "</ol>" +
 
-            "<p>Okay! That's all for now. It's time to dig into some <a href='/documentation'>documentation</a>!</p>"
+            "<p>W porządku! To wszystko na ten moment. Nadszedł czas, aby przejść do <a href='/documentation'>dokumentacji</a>!</p>"
 
         },
          trigger:function(result){
