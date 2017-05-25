@@ -481,18 +481,18 @@ tryhaskell.pages.list =
                  result.type == "Char";
          }},
         {guide:function(result){
-            return "<h3>"+tryhaskell.pages.rmsg(["Well done!","Brilliant!","Perfetto!"])+"</h3>" +
+            return "<h3>"+tryhaskell.pages.rmsg(["Dobrze!","Nieźle!","Świetnie!"])+"</h3>" +
 
-            "<p>Wizard! I think you've got pattern-matching down.</p>" +
+            "<p>Myślę, że już poznałeś dopasowanie wzorców.</p>" +
 
-            "<p>If you're still a bit unsure, here are some other things you can try:</p>" +
+            "<p>Jeśli nadal nie jesteś pewien, oto kilka innych rzeczy, które możesz spróbować:</p>" +
 
             "<ul>" +
                 "<li><code>let _:_:c:_ = \"abcd\" in c</code></li>" +
                 "<li><code>let [a,b,c] = \"cat\" in (a,b,c)</code></li>" +
                 "</ul>" +
 
-            "<p>You can also grab a whole value <em>and</em> pattern match on it (have your cake and eat it too):</p>" +
+            "<p>Możesz też pobrać całą wartość <em>i</em> dopasować wzór do niej (mieć ciastko i zjeść ciastko):</p>" +
 
             "<code>let abc@(a,b,c) = (10,20,30) in (abc,a,b,c)</code>"
         },
