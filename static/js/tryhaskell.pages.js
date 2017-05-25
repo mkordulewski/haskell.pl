@@ -469,7 +469,7 @@ tryhaskell.pages.list =
                  result.type == "Char";
          }},
         {guide:function(result){
-            return "<h3>"+tryhaskell.pages.rmsg(["Ćwiczenie!","Show me the money!"])+"</h3>" +
+            return "<h3>"+tryhaskell.pages.rmsg(["Ćwiczenie!","Pokaż co potrafisz!"])+"</h3>" +
 
             "<p>Spróbuj pobrać wartość <code>'a'</code> z podanej wartości za pomocą dopasowania wzorców:</p>" +
                 "<p><code>(10,\"abc\")</code></p>" +
