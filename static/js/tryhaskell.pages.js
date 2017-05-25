@@ -425,25 +425,24 @@ tryhaskell.pages.list =
          title:'Pattern Matching',
          guide:function(result){
              var title =
-                 tryhaskell.pages.rmsg(["And therefore, patterns emerge in nature.",
-                                        "And Then Patterns",
-                                        "Pattern matching!"])
+                 tryhaskell.pages.rmsg(["A teraz wzorce",
+                                        "Dopasowanie wzorców!"])
              return "<h3>" + title + "</h3>" +
 
-             "<p>Jolly good show!</p>" +
-                 "<p>So you had a value <code>(10,12)</code> and matched " +
-                 "it against a pattern <code>(a,b)</code>, then you were able" +
-                 " to do stuff with the <code>a</code> and <code>b</code>!" +
+             "<p>Niezły pokaz!</p>" +
+                 "<p>Tak więc miałeś wartość <code>(10,12)</code> i dopasowałeś ją " +
+                 " do wzorca <code>(a,b)</code>, a następnie możesz coś" +
+                 " zrobić z <code>a</code> i <code>b</code>!" +
 
-             "<p>Note: Pattern matching <code>(a,b)</code> against "+
-                 "<code>(1,2)</code> to get the <code>a</code> is the same as" +
-                 " doing <code>fst (1,2)</code>, like you did in <code>step7</code>!</p>" +
+             "<p>Uwaga: Dopasowanie wzorca <code>(a,b)</code> do "+
+                 "<code>(1,2)</code> by pobrać <code>a</code> jest tym samym co działanie" +
+                 " <code>fst (1,2)</code>, tak jak zrobiłeś w kroku siódmym (wpisz <code>step7</code> by powrócić do niego)!</p>" +
 
-             "<p>A pattern always matches the way the "+
-                 "value was originally constructed. Remember that <code>\"abc\"</code> is " +
-                 "syntactic sugar for <code>'a' : 'b' : 'c' : []</code>.</p>" +
+             "<p>Wzorzec zawsze musi zostać dopasowany do wartości w spobób jaki została skonstruowana. "+
+                 "Pamiętaj, że <code>\"abc\"</code> jest " +
+                 "lukrem składniowym dla <code>'a' : 'b' : 'c' : []</code>.</p>" +
 
-             "<p>So you can get the characters from a string with patterns:</p>" +
+             "<p>Tak więc możesz pobrać znaki ze stringa za pomocą wzorca:</p>" +
 
              "<code>let (a:b:c:[]) = \"xyz\" in a</code>"
          },
