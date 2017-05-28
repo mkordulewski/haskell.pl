@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head><title>Język Haskell</title>
+    <meta charset="utf-8">
+    <meta content="IE edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="haskell,functional,pure,programming,lazy" name="keywords">
+    <meta content="Czysto funkcyjny język programowania Haskell." name="description">
+    <link href="static/img/favicon.ico?etag=-4XQV6tt" rel="shortcut icon">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Raleway:700,900|Ubuntu+Mono:400" type="text/css"
+          rel="stylesheet">
+    <link href="static/css/hl.min.css?etag=2LtRot0K" type="text/css" rel="stylesheet">
+</head>
+<body class="page-home">
+<div class="wrap">
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button data-toggle="collapse" data-target="#haskell-menu" class="navbar-toggle collapsed"><span
+                        class="sr-only"></span><span class="icon-bar"></span><span class="icon-bar"></span><span
+                        class="icon-bar"></span></button>
+            </div>
+            <div id="haskell-menu" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://www.haskell.org/downloads">Zasoby</a></li>
+                    <li><a href="https://www.haskell.org/community">Społeczność</a></li>
+                    <li><a href="https://www.haskell.org/documentation">Dokumentacja</a></li>
+                    <li><a href="https://www.haskell.org/news">Wiadomości</a></li>
+                    <li><a href="https://wiki.haskell.org/">Wiki</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="header">
+        <div class=" container ">
+            <div class=" row ">
+                <div class=" span12 col-sm-12 hidden-xs"><br></div>
+                <div class=" span6 col-md-6">
+                    <div class="branding"><br class="hidden-xs"><img src="static/img/haskell-logo.svg?etag=ukf3Fg7-"
+                                                                     class="img-responsive"><h4 class="summary">
+                        Zaawansowany czysto funkcyjny język programowania</h4></div>
+                </div>
+                <div class=" span6 col-md-6">
+                    <div class="branding sample"><br class="visible-xs visible-sm"><h4 class="tag">Deklaratywny, statycznie typowany kod.</h4>
+
+                        <div title="This example is contrived in order to demonstrate what Haskell looks like, including: (1) where syntax, (2) enumeration syntax, (3) pattern matching, (4) consing as an operator, (5) list comprehensions, (6) infix functions. Don&#39;t take it seriously as an efficient prime number generator."
+                             class="code-sample"><pre><span class='hs-definition'>primes</span> <span
+                                class='hs-keyglyph'>=</span> <span class='hs-varid'>filterPrime</span> <span
+                                class='hs-keyglyph'>[</span><span class='hs-num'>2</span><span
+                                class='hs-keyglyph'>..</span><span class='hs-keyglyph'>]</span>
+  <span class='hs-keyword'>where</span> <span class='hs-varid'>filterPrime</span> <span class='hs-layout'>(</span><span
+                                    class='hs-varid'>p</span><span class='hs-conop'>:</span><span
+                                    class='hs-varid'>xs</span><span class='hs-layout'>)</span> <span
+                                    class='hs-keyglyph'>=</span>
+          <span class='hs-varid'>p</span> <span class='hs-conop'>:</span> <span
+                                    class='hs-varid'>filterPrime</span> <span class='hs-keyglyph'>[</span><span
+                                    class='hs-varid'>x</span> <span class='hs-keyglyph'>|</span> <span class='hs-varid'>x</span> <span
+                                    class='hs-keyglyph'>&lt;-</span> <span class='hs-varid'>xs</span><span
+                                    class='hs-layout'>,</span> <span class='hs-varid'>x</span> <span class='hs-varop'>`mod`</span> <span
+                                    class='hs-varid'>p</span> <span class='hs-varop'>/=</span> <span
+                                    class='hs-num'>0</span><span class='hs-keyglyph'>]</span></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br class="hidden-xs hidden-sm"><br class="hidden-xs hidden-sm">
+
+    <div class="pattern-bg">
+        <div class=" container ">
+            <div class=" row ">
+                <div class=" span12 col-sm-12">
+                    <div onclick="tryhaskell.controller.inner.click()" class="try">
+                        <div class=" container ">
+                            <div class=" row ">
+                                <div class=" span12 col-sm-12" style="text-align: center;">
+                                    <h2>404</h2>
+                                    <p>Strona nie została znaleziona</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="static/js/jquery.js?etag=j8JeJ9Qn"></script>
+<script src="static/js/bootstrap.min.js?etag=SxgsLh7a"></script>
+<script src="static/js/home.js?etag=w6pzbsRe"></script>
+<script src="static/js/jquery.console.js?etag=uAlUuN_m"></script>
+<script src="static/js/tryhaskell.js?etag=S8s8CEmL"></script>
+<script src="static/js/tryhaskell.pages.js?etag=EMKsJm3I"></script>
+</body>
+</html>
